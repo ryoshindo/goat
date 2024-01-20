@@ -104,10 +104,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "aws-sdk-dynamodb"
-version = "1.11.0"
+name = "aws-sdk-iam"
+version = "1.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "82b79115d4a0d76a7bf13e0107456f41405604c18975a766439e82236f3f69c0"
+checksum = "36c661229980f88aeee4624e2defb0458e8fc7ea3c6aea66df45d0387e91cba8"
 dependencies = [
  "aws-credential-types",
  "aws-http",
@@ -115,12 +115,12 @@ dependencies = [
  "aws-smithy-async",
  "aws-smithy-http",
  "aws-smithy-json",
+ "aws-smithy-query",
  "aws-smithy-runtime",
  "aws-smithy-runtime-api",
  "aws-smithy-types",
+ "aws-smithy-xml",
  "aws-types",
- "bytes",
- "fastrand",
  "http",
  "once_cell",
  "regex-lite",
@@ -593,7 +593,7 @@ name = "goat"
 version = "0.1.0"
 dependencies = [
  "aws-config",
- "aws-sdk-dynamodb",
+ "aws-sdk-iam",
  "tokio",
 ]
 
